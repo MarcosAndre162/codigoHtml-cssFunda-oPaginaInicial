@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F1F1F1;
+    box-shadow: 0 5px 15px 0 rgba(37, 50, 55, 0.15);
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    max-width: 100%;
+}
+
+.opcoes-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.opcao-menu {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.retangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imagem {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center; 
+    margin: 20px 0;
+    padding: 0;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.titulo {
+    align-self: start;
+}
+
+.titulo,
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 387px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    align-self: start;
+    
+}
+
+.card p:last-child {
+    margin-bottom: 20px;
+}
+
+.titulo2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #253237;
+    color: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contato {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.desenvolvido-por {
+    flex: 1;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contato h2,
+.desenvolvido-por h2 {
+    margin-bottom: 10px;
+}
+
+.contato-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.desenvolvido-por-imagens {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.desenvolvido-por-imagens img {
+    width: auto;
+    height: auto;
+}
+
+.image3 {
+    margin-bottom: 400px;
+}
+
+
+@media (max-width: 1200px) {
+    .logo {
+        width: 140px;
+    }
+
+    .opcao-menu {
+        font-size: 12px;
+    }
+
+    .imagem img {
+        width: 100%; 
+    }
+
+    .image {
+        grid-template-columns: 3fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+    }
+
+    .contato,
+    .desenvolvido-por {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
